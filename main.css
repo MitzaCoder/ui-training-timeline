@@ -3,7 +3,10 @@
   --white: #FFF;
   --purple: #b97cfc;
   --pink: #F93B69;
-  --grey: #d9d9d9;
+  --green: #B0E8E2;
+  --orange: #EB8B6E;
+  --light-grey: #d9d9d9;
+  --dark-grey: #808080;
 }
 
 /* @font-face {
@@ -13,10 +16,9 @@
 } */
 
 .container {
-  max-width: 380px;
+  max-width: 350px;
   max-height: 630px;
   overflow: hidden;
-  background-color: var(--white);
   margin: 30px auto 0;
   box-shadow: 0 0 20px var(--black);
   font-family: 'Open Sans', sans-serif;
@@ -43,9 +45,9 @@
 }
 
 .profile-pic {
-  position: relative;
   width: 30px;
   height: 30px;
+  position: relative;  
   display: inline-block;
   float: right;
 }
@@ -55,7 +57,7 @@
   border-radius: 50%;
 }
 
-.notifications {
+.notification {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -91,7 +93,7 @@
   align-items: center;
   bottom: -25px;
   right: 20px;
-  box-shadow: 0 0 20px var(--black);
+  box-shadow: 0 0 8px var(--black);
 }
 
 .day-number {
@@ -116,32 +118,81 @@
   margin-top: 2px;
 }
 
-.timeline > ul {
-  padding: 0;
+.timeline ul {
+  padding: 1rem 0 0 2rem;
   padding-left: 2rem;
   list-style: none;
   position: relative;
+  margin: 0;
 }
 
-.timeline > ul::before {
+.timeline ul::before {
   content: ' ';
   height: 100%;
   width: 1px;
-  background-color: var(--grey);
+  background-color: var(--light-grey);
   position: absolute;
   top: 0;
   left: 2.5rem;
   z-index: -1;
 }
 
-.timeline > li div {
+.timeline li div {
   display: inline-block;
+  margin: 1rem 0;
+  vertical-align: top;
 }
 
-.bullet {
+.timeline .bullet {
   width: 1rem;
   height: 1rem;
   border: 2px solid grey;
   box-sizing: border-box;
+  border-radius: 50%;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.timeline li:nth-of-type(1) .bullet {
+  border-color: var(--pink);
+}
+
+.timeline li:nth-of-type(2) .bullet {
+  border-color: var(--green);
+}
+
+.timeline li:nth-of-type(3) .bullet {
+  border-color: var(--orange);
+}
+
+.timeline li:nth-of-type(4) .bullet {
+  border-color: var(--green);
+}
+
+.timeline .time {
+  width: 20%;
+  font-size: 0.75rem;
+}
+
+.timeline .desc {
+  width: 50%;
+}
+
+.timeline h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.timeline h4 {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+}
+
+.timeline .people img {
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
