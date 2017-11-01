@@ -21,7 +21,7 @@
   src: url('./Open_Sans/OpenSans-Regular.ttf');
 }
 
-.container {
+/* .container {
   max-width: 350px;
   max-height: 630px;
   overflow: hidden;
@@ -201,4 +201,84 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vw 4vw;
+  box-sizing: border-box;  
+  background-color: var(--purple);
+}
+
+.navbar a {
+  color: var(--white);
+  font-size: 8vw;
+  text-decoration: none;
+}
+
+.navbar .title {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 4.5vw;
+}
+
+.profile-pic {
+  width: 8vw;
+  height: 8vw;
+}
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 50%;  
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  height: 50vw;
+  box-sizing: border-box;
+  padding: 0 0 0 10vw;
+  background: url('./header-background.jpg');
+  background-size: cover;
+}
+
+.date-right {
+  display: flex;
+  height: 13vw;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 4vw;
+}
+
+.day-number {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 18vw;
+}
+
+.day-name {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 7vw;
+  padding-left: 0.5vw;
+}
+
+.month-year {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 2.8vw;
+  letter-spacing: 2px;
 }
