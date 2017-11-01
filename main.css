@@ -9,11 +9,17 @@
   --dark-grey: #808080;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Open Sans';
   font-weight: 300;
-  src: url('./Open_Sans/OpenSans-Regular.ttf')
-} */
+  src: url('./Open_Sans/OpenSans-Light.ttf')
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('./Open_Sans/OpenSans-Regular.ttf');
+}
 
 .container {
   max-width: 350px;
@@ -85,7 +91,7 @@
   background-color: var(--pink);
   width: 50px;
   height: 50px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   border-radius: 50%;
   display: flex;

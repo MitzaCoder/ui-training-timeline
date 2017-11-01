@@ -1,0 +1,23 @@
+{
+  "name": "ui-timeline",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MitzaCoder/ui-training-timeline.git"
+  },
+  "author": "Mihai Saru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MitzaCoder/ui-training-timeline/issues"
+  },
+  "homepage": "https://github.com/MitzaCoder/ui-training-timeline#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0"
+  }
+}
